@@ -3,14 +3,23 @@
 
 import React, { Component } from 'react';
 import {
+  View,
   StyleSheet,
-  Text
+  Text,
 } from 'react-native';
 
+import List from './components/listview'
 
 export default class HomeController extends Component<{}> {
   render() {
-    return React.createElement(Text, {style: styles.description}, "Search for houses to buy!");
+    return (
+      <View>
+        <Text style={styles.description}>
+          Search for houses to buy! (Again!)
+        </Text>
+        <List/>
+      </View>
+    )
   }
 }
 
