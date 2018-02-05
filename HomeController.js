@@ -5,19 +5,19 @@ import React, { Component } from 'react';
 import {
   View,
   StyleSheet,
-  Text,
+  Text
 } from 'react-native';
 
-import List from './components/listview'
+import FlatListBasics from './components/FlatListBasics';
 
-export default class HomeController extends Component<{}> {
+export default class HomeController extends Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <Text style={styles.description}>
           Search for houses to buy! (Again!)
         </Text>
-        <List/>
+        <FlatListBasics />
       </View>
     )
   }
@@ -28,5 +28,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     backgroundColor: '#F5FCFF',
     marginTop:65
+  }, container: {
+    flex: 1,
+    backgroundColor: 'white',
   }
 });

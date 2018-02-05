@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 
 import HomeController from './HomeController';
-
+import FlatListBasics from './components/FlatListBasics';
 
 export default class App extends Component<{}> {
   render() {
@@ -23,7 +23,7 @@ export default class App extends Component<{}> {
       <NavigatorIOS
         style={styles.container}
         initialRoute={{
-          title: 'Property Finder',
+          title: 'Home',
           component: HomeController,
         }}/>
     );
